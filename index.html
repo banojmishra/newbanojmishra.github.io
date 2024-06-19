@@ -3,279 +3,311 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banoj's Portfolio</title>
-
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Banoj - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-
-    <!-- header design -->
-
-    <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <nav>
+            <div class="left">Banoj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
-
-    <!-- home section design -->
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Banoj Mishra</h1>
-            <p>Results-driven Microsoft Dynamics 365 Developer with over 1 year of hands-on experience in designing,
-                customizing, and implementing robust solutions.</p>
-
-            <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://x.com" target="_blank"><i class='bx bxl-twitter'></i></a>
-                <a href="https://github.com/banojmishra" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/banoj-kumar-mishra-7a78b12b7" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-            </div>
-
-            <button class="btn" onclick="downloadResume()">Download CV</button>
-        </div>
-        <div class="skill-content">
-            <div class="skill-card">
-                <h2>C#</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 80%;"></div>
+    <main class="mt-5">
+        <section class="home-section" id="home">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="text-greenyellow">Banoj</span></div>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="downloadResume()">Download Resume</button>
+                    <button class="btn" onclick="visitGithub()">Visit Github</button>
                 </div>
             </div>
-            <div class="skill-card">
-                <h2>SQL</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 80%;"></div>
-                </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
             </div>
-            <div class="skill-card">
-                <h2>BOOTSTRAP</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 95%;"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h2>HTML</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 95%;"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h2>CSS</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h2>JAVASCRIPT</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h2>DYNAMICS 365</h2>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 90%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section design -->
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span> </h2>
-            <h3>Hi, I'm here to help your next project!</h3>
-            <p>I'm an experienced Dynamics 365 developer with over a year of immersive hands-on practice. My expertise
-                spans a range of D365 functionalities, including Power Apps, Power Automate Flow, Power Pages, Plugins,
-                Web resources, and more.</p>
-            <a href="#" class="btn ">Read More</a>
-        </div>
-    </section>
-
-    <!-- services section design -->
-
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Devlopment</h3>
-                <p>Expert development services to build robust and scalable applications tailored to your business
-                    needs.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Customization</h3>
-                <p>Tailored customization solutions to enhance the existing systems and ensure they meet unique
-                    requirements.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Integration</h3>
-                <p>Seamless integration services to connect disparate systems, streamline processes, and enhance overall
-                    efficiency.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- portfolio section design -->
-
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Collectius</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>WeConnect</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>FuelHub</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Burlington</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>CredEx</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Daifuku</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, accusantium aliquam.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- testimonial design -->
-
-    <div class="testimonial-container">
-        <h2 class="heading">Valuable <span>Testimonial</span></h2>
-
-        <div class="testimonial-wrapper">
-            <div class="testimonial-box mySwiper">
-                <div class="testimonial-content swiper-wrapper">
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial1.jpg" alt="">
-                        <h3>Jackson Levi</h3>
-                        <p>Working with Banoj was a pleasure. He delivered high-quality work that exceeded my
-                            expectations. His expertise and professionalism made the entire process smooth and
-                            enjoyable.</p>
+        </section>
+        <section class="about-section mt-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="skill-card">
+                            <h3 class="fw-bolder ">Skills</h3>
+                            <!-- <div class="skill">
+                                <span>C++</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C#</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>BOOTSTRAP</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>SQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>HTML</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JAVASCRIPT</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>DYNAMICS 365</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div> -->
+                            <div class="skill" data-progress="65">
+                                <span>C++</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="80">
+                                <span>C#</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>BOOTSTRAP</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="90">
+                                <span>SQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>HTML</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="80">
+                                <span>CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="85">
+                                <span>JAVASCRIPT</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>DYNAMICS365</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial2.jpg" alt="">
-                        <h3>Natal Ocean</h3>
-                        <p>Banoj provided exceptional service. His attention to detail and dedication to my
-                            project ensured that every aspect was perfect. Highly recommended!</p>
-                    </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial3.jpg" alt="">
-                        <h3>Julian Grayson</h3>
-                        <p>Banoj's ability to understand my needs and deliver a tailored solution was impressive.
-                            He was responsive, reliable, and a pleasure to work with from start to finish.</p>
+                    <div class="col-lg-6">
+                        <div class="about-description">
+                            <h2 class="fw-bolder ">About Me</h2>
+                            <p>
+                                With over 2 years of comprehensive experience in the field of MS Dynamics 365
+                                Developmet,
+                                accompanied by a bachelor's degree in engineering. Proficient in D365 devlopment, CRM
+                                customization,
+                                workflow automation, data integration, and system optimization.
+                                Demonstrated success in leading impactful projects and providing effective mentorship.
+                            </p>
+                            <div class="additional-info">
+                                <p><span class="title-s">Name: </span> <span>Banoj Kumar Mishra</span></p>
+                                <p><span class="title-s">Education: </span> <span>Bachelor of Engineering</span></p>
+                                <p><span class="title-s">Technologies: </span> <span>C++, C#, HTML, BOOTSTRAP, CSS,
+                                        JAVASCRIPT, SQL,
+                                        D365</span></p>
+                                <p><span class="title-s">Job Role: </span> <span>Dynamics 365 Developer</span></p>
+                                <p><span class="title-s">Experience: </span> <span>2 Years 3 Months</span></p>
+                                <p><span class="title-s">Address: </span> <span>Odisha, India</span></p>
+                                <p><span class="title-s">Language: </span> <span>English, Hindi, Odia</span></p>
+                                <p><span class="title-s">Interest: </span> <span>Fitness Enthusiast</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
-    </div>
-
-    <!-- contact section design -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+        </section>
+        <section class="technology-section mt-5" id="technology">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Technology</h1>
+                <hr class="my-4 custom-hr">
+                <div class="technology-images" id="technologyImages">
+                    <div class="image-container">
+                        <img src="c-plus-plus-programming-language-icon.png" alt="Technology 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="c-sharp-programming-language-icon.png" alt="Technology 2">
+                    </div>
+                    <div class="image-container">
+                        <img src="bootstrap-4-icon.png" alt="Technology 3">
+                    </div>
+                    <div class="image-container">
+                        <img src="sql-server-icon.png" alt="Technology 4">
+                    </div>
+                    <div class="image-container">
+                        <img src="html-icon.png" alt="Technology 5">
+                    </div>
+                    <div class="image-container">
+                        <img src="css-icon.png" alt="Technology 6">
+                    </div>
+                    <div class="image-container">
+                        <img src="javascript-programming-language-icon.png" alt="Technology 7">
+                    </div>
+                    <div class="image-container">
+                        <img src="D365.png" alt="Technology 8">
+                    </div>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+        </section>
+        <section class="education-section mt-5" id="education">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Education</h1>
+                <hr class="my-4 custom-hr">
+                <div class="row mt-5">
+                    <!-- First Card - Schooling -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2007-2017</h1>
+                                <p class="card-text fw-bold fs-2">Schooling</p>
+                                <p class="card-text fw-bold fs-5">N.S High School, Adheigundi</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Card - College -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2017-2019</h1>
+                                <p class="card-text fw-bold fs-2">College</p>
+                                <p class="card-text fw-bold fs-5">Government College, Angul</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centered Third Card - Graduation -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2019-2023</h1>
+                                <p class="card-text fw-bold fs-2">Graduation</p>
+                                <p class="card-text fw-bold fs-5">Centurion University of Technology and Management,
+                                    Bhubaneswar</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer design -->
-
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Banoj | All Rights Reserved</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+        </section>
+        <section class="contact-section mt-5" id="contact">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Contact</h1>
+                <hr class="my-4 custom-hr">
+                <p class="mt-3">Below are the details to reach out to me!</p>
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1"><i class="fa-solid fa-address-card fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder">Address</h3>
+                            </div>
+                            <p>Odisha, India</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1 "><i class="fa-solid fa-phone fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder">Contact Number</h3>
+                            </div>
+                            <p>+91 799 100 5032</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1"><i class="fa-solid fa-envelope fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder ">Email Address</h3>
+                            </div>
+                            <p>banojkumarmishra3@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-5">
+            <div class="text-center text-greenyellow">
+                Copyright &#169 banojsportfolio.com | All rights reserved
+            </div>
+            <button id="scrollToTopBtn" onclick="scrollToTop()" class="scroll-to-top-btn" title="Go to Top">
+                <i class="fa-solid fa-arrow-up fa-flip fa-xl"></i>
+            </button>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Dynamics 365 Developer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>

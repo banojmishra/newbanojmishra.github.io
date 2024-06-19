@@ -1,0 +1,62 @@
+var skills = document.querySelectorAll('.skill');
+
+    skills.forEach(function(skill) {
+        var progress = parseInt(skill.dataset.progress, 10);
+
+        var progressBar = document.createElement('div');
+        progressBar.className = 'progress-bar';
+        var progressElement = document.createElement('div');
+        progressElement.className = 'progress';
+        progressBar.appendChild(progressElement);
+
+        skill.appendChild(progressBar);
+
+        // Add a class to trigger the animation after a short delay
+        setTimeout(function() {
+            progressElement.style.width = progress + '%';
+        }, 100);
+    });
+	
+	
+	
+	
+	 <section class="education-section mt-5" id="education">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Education</h1>
+                <hr class="my-4 custom-hr">
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card mb-4 education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2007-2017</h1>
+                                <p class="card-text fw-bold fs-2">Schooling</p>
+                                <p class="card-text fw-bold fs-5">N.S High School, Adheigundi</p>
+                                <p class="card-text">Grade: First class disticntion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card mb-4 education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2017-2019</h1>
+                                <p class="card-text fw-bold fs-2">College</p>
+                                <p class="card-text fw-bold fs-5">Government College, Angul</p>
+                                <p class="card-text">Grade: First class disticntion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card mb-4 education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2019-2023</h1>
+                                <p class="card-text fw-bold fs-2">Graduation</p>
+                                <p class="card-text fw-bold fs-5">Centurion University, Bhubaneswar</p>
+                                <p class="card-text">Grade: First class disticntion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
